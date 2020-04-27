@@ -6,6 +6,45 @@ body {
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  font-size: 30px;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .container {
   width: 1170px;
@@ -14,7 +53,7 @@ a {
 }
 
 .top-wrapper {
-  padding: 10px 0 10px 0;
+  padding: 70px 0 10px 0;
   background-size: cover;
   background-color:#dfe6e9;
   color: #8e44ad;
@@ -129,4 +168,33 @@ to {top: 0px;}
   color:#e74c3c;
   font-family:sans-serif;
   font-weight:bold;
+}
+
+.contact-form {
+  padding-top: 60px;
+  padding-left: 10px;
+  font-family: cursive;
+  background-color: #dfe6e9;
+}
+
+input,textarea {
+  width:400px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:10px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+.contact-submit{
+  background-color:#0984e3;
+  color:white;
+}
+
+footer {
+  background-color: black;
+  color:white;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
 }
